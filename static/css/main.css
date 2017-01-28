@@ -1,0 +1,83 @@
+* {
+    font-family: 'Indie Flower', cursive;
+}
+
+header {
+    color: black;
+    font-size: 75px;
+    height: 100%;
+}
+
+.container-header {
+    color: black;
+    font-size: 75px;
+    background: url('../../static/images/amazing_food.jpg');
+    background-size: cover;
+    position: relative;
+    border: inset 30px #A7AD3C;
+}
+
+.jumbotron {
+    background-color: #8A211D;
+    color: #F0CE43;
+    border: dashed 30px #BF4E15;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    overflow: scroll;
+}
+
+h1 {
+    color: white;
+    font-size: 20px;
+    font-style: bold;
+}
+
+.container {
+    color: white;
+    font-size: 75px;
+    font-style: bold;
+    border: dotted 25px #CF872E;
+}
+
+.column-one {
+    width: 860px;
+    align: left;
+    
+}
+
+.column-two {
+    width: 200px;
+    align: right;
+}
+
+
+.logo {
+    color: black;
+    font-size: 125px;
+    font-style: bold;
+}
+
+a {
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.form-control {
+    height: 40px;
+    width: 400px;
+    border-radius: 10px;
+    padding: 3px;
+    margin: 1px;
+}
+
+.button {
+    height: 50px;
+    width: 75px;
+    border-radius: 10px;
+    margin: 3px;
+    color: white;
+    background-color: #BF4E15;
+}

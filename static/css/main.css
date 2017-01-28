@@ -8,54 +8,56 @@ header {
     height: 100%;
 }
 
+body {
+    background-color: #8A211D;
+}
+
 .container-header {
     color: black;
     font-size: 75px;
     background: url('../../static/images/amazing_food.jpg');
     background-size: cover;
     position: relative;
-    border: inset 30px #A7AD3C;
+    border: inset 15px #A7AD3C;
 }
 
 .jumbotron {
     background-color: #8A211D;
     color: #F0CE43;
-    border: dashed 30px #BF4E15;
     position: relative;
     width: 100%;
     height: 100%;
     background-size: cover;
-    overflow: scroll;
 }
 
 h1 {
-    color: white;
+    color: #EEE0B7;
     font-size: 25px;
     font-style: bold;
     line-height: 1.0;
 }
 
 h2 {
-    color: white;
+    color: #EEE0B7;
     font-size: 18px;
     line-height: 1.2;
 }
 
 h3 {
-    color: white;
+    color: #EEE0B7;
     font-size: 17px;
     line-height: 1.2;
 }
 
 h4 {
-    color: #F0CE43;
+    color: #EEE0B7;
     font-size: 16px;
     line-height: 0.2;
     font-style: bold;
 }
 
 .container {
-    color: white;
+    color: #EEE0B7;
     font-size: 75px;
     font-style: bold;
     border: dotted 25px #CF872E;
@@ -64,7 +66,6 @@ h4 {
 .column-one {
     width: 860px;
     align: left;
-    
 }
 
 .column-two {
@@ -80,7 +81,7 @@ h4 {
 }
 
 a {
-    color: white;
+    color: #EEE0B7;
     font-size: 30px;
     text-decoration: none;
 }
@@ -91,6 +92,7 @@ a {
     border-radius: 10px;
     padding: 3px;
     margin: 1px;
+    background-color: #8A211D;
 }
 
 .button {
@@ -98,6 +100,6 @@ a {
     width: 75px;
     border-radius: 10px;
     margin: 3px;
-    color: white;
-    background-color: #BF4E15;
+    color: #EEE0B7;
+    background-color: #8A211D;
 }

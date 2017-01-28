@@ -134,7 +134,6 @@ SQLAlchemy==1.0.13
 statsmodels==0.6.1
 sympy==1.0
 tables==3.2.2
-toolz==0.8.0
 tornado==4.4.1
 traitlets==4.3.0
 umalqurra==0.2

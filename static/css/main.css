@@ -30,7 +30,27 @@ header {
 
 h1 {
     color: white;
-    font-size: 20px;
+    font-size: 25px;
+    font-style: bold;
+    line-height: 1.0;
+}
+
+h2 {
+    color: white;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+h3 {
+    color: white;
+    font-size: 17px;
+    line-height: 1.2;
+}
+
+h4 {
+    color: #F0CE43;
+    font-size: 16px;
+    line-height: 0.2;
     font-style: bold;
 }
 

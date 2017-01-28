@@ -20,24 +20,15 @@ def get_businesses(location, params):
     response = client.search(location, params)
     businesses = []
 
-
     for business in response.businesses:
-        businesses.append({
-            "name": business.name,
-            "rating": business.rating,
-            "phone": business.display_phone
-        })
+        businesses.append([
+            business.name,
+            business.rating,
+            business.display_phone
+        ])
 
     return businesses
 
-    def print_businesses(businesses):
-        for business in businesses:
-            print(business.name)
-            print(business.rating)
-            print(business.phone)
-            print("\n ")
-
-    businesses = print_businesses(businesses)
 
 
 @app.route('/')
@@ -58,3 +49,21 @@ def about():
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port)
+
+
+#     for business in response.businesses:
+#         businesses.append({
+#             "name": business.name,
+#             "rating": business.rating,
+#             "phone": business.display_phone
+#         })
+#
+#         return businesses
+#     def print_businesses(businesses):
+#         for business in businesses:
+#             print(business.name)
+#             print(business.rating)
+#             print(business.phone)
+#             print("\n ")
+# 
+#     businesses = print_businesses(businesses)

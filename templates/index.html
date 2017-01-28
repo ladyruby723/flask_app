@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
+    	<meta name="keywords" content="restaurant, food, local business, business, eat, cuisine, search, find, suggestion">
+    	<meta name="description" content="Find great local restaurant suggestions">
+
         <title>Indie Cuisine</title>
         <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
     </head>
@@ -14,16 +18,20 @@
             <div class="container">
                 {% if businesses %}
                     <div class="column-one">
-                        <h1>{{ businesses }}</h1>
+                        <h1>{{ businesses[0] }}</h1>
+                        <h1>{{ businesses[1] }}</h1>
+                        <h1>{{ businesses[2] }}</h1>
                         <p></p>
                     </div>
                     <div class="column-two">
                     </div>
-                    <a href="{{ url_for('index') }}">Look for more mod eateries</a>
+                    <a href="{{ url_for('index') }}">Look for more mod eateries | </a>
                 {% else %}
                     <h1>Welcome to Indie Cuisine! Find great local restaurant suggestions here!</h1>
-                    <h2>Where do you live, and what type of restaurant are you searching for?</h2>
-                    <h3>For all restaurants, enter "food".</h3>
+                    <h2><em>(You can also search for other "non-culinary" businesses.)</em></h2>
+                    <h2></h2>
+                    <h4>Enter your location and search terms. For all restaurants, enter "food". Or "coffee" for coffee shops.</h4>
+                    <h4>Or search for something else (e.g. 'carwash', 'dry cleaning', 'marketing').</h4>
                     <form action="/" class="form-inline">
                         <div class="form-group">
                             <input type="text" name="location" class="form-control" placeholder="City, State">
@@ -34,7 +42,7 @@
                         <input type="submit" value="Submit" class="button">
                     </form>
                 {% endif %}
-                <a href="{{ url_for('about') }}"> | About Indie Cuisine</a>
+                <a href="{{ url_for('about') }}">About Indie Cuisine</a>
             </div>
         </div>
     </body>

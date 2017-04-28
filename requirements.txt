@@ -1,14 +1,9 @@
-Flask==0.11.1
-Flask-Cors==2.1.2
+Flask==0.12
+Flask-Cors==3.0.2
 Flask-DotEnv==0.1.0
 Flask-Env==1.0.1
-itsdangerous==0.24
-jdatetime==1.8.1
-Jinja2==2.8
 oauth2==1.9.0.post1
 oauth2client==4.0.0
-py==1.4.31
-pylint==1.5.4
 python-dotenv==0.6.2
 requests==2.12.5
 yelp==1.0.2
